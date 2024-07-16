@@ -22,11 +22,13 @@
 // console.log(`The balance of the account at ${address} is ${balance} lamports`); 
 // console.log(`✅ Finished!`)
 
+//Sab5y7LG3VefLz4E6DSCkxdmjG4pve3hcAb8NUPKn42.json
+
 
 import { Connection, PublicKey, clusterApiUrl, LAMPORTS_PER_SOL } from "@solana/web3.js";
 
 const connection = new Connection(clusterApiUrl("devnet"));
-const address = new PublicKey('CenYq6bDRB7p73EjsPEpiYN7uveyPUTdXkDkgUduboaN');
+const address = new PublicKey('Sab5y7LG3VefLz4E6DSCkxdmjG4pve3hcAb8NUPKn42');
 const balance = await connection.getBalance(address);
 const balanceInSol = balance / LAMPORTS_PER_SOL;
 
